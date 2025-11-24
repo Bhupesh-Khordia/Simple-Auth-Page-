@@ -181,4 +181,7 @@ if __name__ == "__main__":
     print("📚 Swagger docs available at: http://127.0.0.1:8000/docs")
     
     app = create_simple_ui()
-    app.launch()
+    
+    import os
+    port = int(os.environ.get("PORT", 7860))
+    app.launch(server_name="0.0.0.0", server_port=port)
