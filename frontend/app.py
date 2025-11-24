@@ -2,7 +2,7 @@ import gradio as gr
 import requests
 
 # API settings
-API_URL = "http://127.0.0.1:8000"
+API_URL = "https://simple-auth-page-backend.onrender.com"
 
 # JWT token storage (in real app, use secure session storage)
 current_session = {"token": None, "username": None, "role": None}
